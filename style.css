@@ -814,9 +814,30 @@ p {
   border-radius: 20px;
 }
 
+.education-meta > div {
+  min-width: 0;
+}
+
+.education-meta .edu-logo {
+  flex: 0 0 60px;
+  object-fit: contain;
+  padding: 0.35rem;
+  background: #fff;
+}
+
 .education-meta h3 {
   margin: 0;
   font-size: 1.15rem;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+
+.education-meta h3 a {
+  transition: color 0.2s ease;
+}
+
+.education-meta h3 a:hover {
+  color: var(--accent-cyan);
 }
 
 .education-meta span {
@@ -830,6 +851,55 @@ p {
   margin: 0.85rem 0 1.2rem;
   color: var(--muted);
   letter-spacing: 0.03em;
+}
+
+.school-life {
+  margin-top: 1.35rem;
+}
+
+.school-life h4 {
+  margin: 0 0 0.65rem;
+  font-size: 1.1rem;
+}
+
+.school-life h5 {
+  margin: 1.1rem 0 0.55rem;
+  color: var(--accent-cyan);
+  font-size: 0.95rem;
+}
+
+.school-life p,
+.school-life ul {
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+.school-life p {
+  margin: 0.7rem 0;
+}
+
+.school-life ul {
+  margin: 0.6rem 0 0.9rem;
+  padding-left: 1.25rem;
+}
+
+.school-life li {
+  margin: 0.45rem 0;
+  padding-left: 0.2rem;
+}
+
+.school-life strong {
+  color: var(--text);
+}
+
+.edu-campus-image {
+  width: 100%;
+  max-height: 280px;
+  margin-top: 1.25rem;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  object-fit: cover;
+  object-position: center 55%;
 }
 
 .activity-grid {
